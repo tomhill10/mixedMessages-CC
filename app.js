@@ -1,4 +1,4 @@
-console.log("this works");
+
 
 let subject = [];
 let verb = [];
@@ -23,7 +23,6 @@ const button = document.getElementById("button");
 const quoteLocation = document.getElementById("quoteLocation");
 
 button.addEventListener("click", generateQuote);
-quoteLocation.addEventListener("click", generateQuote);
 
 function generateQuote() {
     let intArray = [];
@@ -37,7 +36,6 @@ function generateQuote() {
     let quoteObject = object.object[intArray[2]];
 
     let fullQuote = `${quoteSubject} ${quoteVerb} ${quoteObject}`;
-    console.log(fullQuote);
     quoteLocation.textContent = fullQuote;
     quoteLocation.classList.remove("hide");
 
